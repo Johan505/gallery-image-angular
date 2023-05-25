@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TitleComponent {
 
-  title:String[]= ['Johan Avendaño', 'Mi viaje por el mundo']
-  
+  title:String[]= ['Johan Avendaño Y Diego', 'Mi viaje por el mundo']
+
 }
