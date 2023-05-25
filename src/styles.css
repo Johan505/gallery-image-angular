@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    background-image: url('https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFpc2FqZSUyMG9zY3Vyb3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+    background-size: cover;
+}
