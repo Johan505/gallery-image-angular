@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as Sites from './data.json';
+import Sites from './data.json';
 
 interface TouristSites {
   id: number;
@@ -14,8 +14,5 @@ interface TouristSites {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  sites: TouristSites[] = Sites;
-  constructor(){
-    console.log('sites', this.sites);
-  }
+
 }
