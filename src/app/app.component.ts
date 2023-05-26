@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Sites from './data.json';
+import * as Sites from './data.json';
 
 interface TouristSites {
   id: number;
