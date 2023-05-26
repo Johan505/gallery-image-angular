@@ -1,4 +1,12 @@
 import { Component } from '@angular/core';
+import Sites from './data.json';
+
+interface TouristSites {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -6,5 +14,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  sites: TouristSites[] = Sites;
+  constructor(){
+    console.log('sites', this.sites);
+  }
 }

@@ -9,5 +9,4 @@ export class TitleComponent {
 
   title:String= 'Johan Avendaño Y Diego';
   subtitle:String = 'Mi viaje por el mundo';
-
 }
