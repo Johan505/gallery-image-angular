@@ -14,5 +14,8 @@ interface TouristSites {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  sites: TouristSites[] = Sites;
+  constructor(){
+    console.log('sites', this.sites);
+  }
 }
