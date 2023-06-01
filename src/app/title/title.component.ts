@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TitleComponent {
 
-  title:String= 'Johan Avendaño Y Diego';
+  title:String= 'Johan Avendaño';
   subtitle:String = 'Mi viaje por el mundo';
 
 }

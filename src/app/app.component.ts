@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import Sites from './data.json';
 
 interface TouristSites {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
+  name:string;
+  imageUrl:string;
 }
 
 @Component({
@@ -13,9 +11,6 @@ interface TouristSites {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  sites: TouristSites[] = Sites;
-  constructor(){
-    console.log('sites', this.sites);
-  }
 }

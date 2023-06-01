@@ -1,0 +1,7 @@
+<div class="gallery">
+  <div class="gallery-item" *ngFor="let site of sites">
+    <div class="text-card">
+        <img class="img" [src]="site.imageUrl" alt="Imagen">
+        <p>{{site.name}}</p>
+    </div>
+</div>

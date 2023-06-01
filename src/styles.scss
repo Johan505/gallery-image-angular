@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-image: url('https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFpc2FqZSUyMG9zY3Vyb3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 5)), url('https://wallpapercave.com/wp/wp10766997.jpg');
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
