@@ -1,7 +1,8 @@
 <div class="gallery">
-  <div class="gallery-item" *ngFor="let site of sites">
-    <div class="text-card">
-        <img class="img" [src]="site.imageUrl" alt="Imagen">
-        <p>{{site.name}}</p>
+  <div class="container-images">
+    <div class="card-image" *ngFor="let site of sites" (click)="irADetalles(site.id)">
+      <img class="img" [src]="site.imageUrl" alt="Imagen">
+      <p class="title">{{site.name}}</p>
     </div>
+  </div>
 </div>

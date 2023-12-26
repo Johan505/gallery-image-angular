@@ -1,0 +1,6 @@
+<div class="details-site" *ngIf="lugar">
+    <p><span>Id:</span> {{ lugar.id }}</p>
+    <p><span>Lugar: </span> {{ lugar.name }}</p>
+    <p><span>Descripcion:</span> {{ lugar.description }}</p>
+    <img [src]="lugar.imageUrl" alt="{{ lugar.name }} Image">
+</div>

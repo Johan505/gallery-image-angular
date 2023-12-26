@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import Sites from '../data.json';
-import { HttpClient } from '@angular/common/http';
 
 interface TouristSites {
+  id: number;
   name: string;
   imageUrl: string;
+  description: string;
 }
 
 @Component({
@@ -16,5 +18,11 @@ interface TouristSites {
 export class GalleryComponent {
 
   sites: TouristSites[] = Sites
+
+  constructor(private router: Router) { }
+
+  irADetalles(id: number) {
+    this.router.navigate(['/detalles', id]);
+  }
 
 }
