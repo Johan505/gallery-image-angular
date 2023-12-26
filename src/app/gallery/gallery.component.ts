@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import Sites from 'src/assets/data.json';
+import Sites from '../data.json';
 
-interface TouristSite {
+interface TouristSites {
   id: number;
   name: string;
   imageUrl: string;
-  desc: string;
+  description: string;
 }
 
 @Component({
@@ -14,13 +14,15 @@ interface TouristSite {
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
+
 export class GalleryComponent {
-  sites: TouristSite[] = Sites;
 
-  constructor(private router: Router) {}
+  sites: TouristSites[] = Sites
 
-  viewDetails(id: number) {
-    this.router.navigate(['detail', id]);
-  }  
-  
+  constructor(private router: Router) { }
+
+  irADetalles(id: number) {
+    this.router.navigate(['/detalles', id]);
+  }
+
 }

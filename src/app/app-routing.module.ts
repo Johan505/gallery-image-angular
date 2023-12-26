@@ -1,13 +1,14 @@
-import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { DetailsComponent } from './details/details.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DetallesComponent } from './detalles/detalles.component'; // Asegúrate de importar el componente de detalles
 import { GalleryComponent } from './gallery/gallery.component';
+
 
 const routes: Routes = [
   { path: '', component: GalleryComponent },
-  { path: 'detail/:id', component: DetailsComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'detalles/:id', component: DetallesComponent }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

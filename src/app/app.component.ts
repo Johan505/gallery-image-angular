@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Sites from 'src/assets/data.json';
+import Sites from './data.json';
 
 interface TouristSites {
   name:string;
